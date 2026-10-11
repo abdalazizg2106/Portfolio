@@ -1,0 +1,1402 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>
+      Abdulaziz Mohammed | Full-Stack Developer (Laravel) &amp; Flutter Apps
+    </title>
+    <meta
+      name="description"
+      content="Abdulaziz Mohammed — Full-Stack web developer specializing in Laravel and admin dashboards, connecting Flutter apps to the backend, and deploying on Linux VPS servers."
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Sora:wght@500;600;700&family=JetBrains+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Reading progress bar -->
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+    <!-- Background -->
+    <div class="bg-aurora" aria-hidden="true"><span></span><span></span></div>
+    <div class="bg-grid" aria-hidden="true"></div>
+
+    <!-- ====== FLOATING HEADER ====== -->
+    <header class="site-header" id="siteHeader">
+      <div class="header-inner">
+        <a
+          href="#hero"
+          class="brand"
+          aria-label="Abdulaziz Mohammed — back to top"
+        >
+          <span class="brand-mark">AM</span>
+          <span class="brand-text">
+            <strong>Abdulaziz Mohammed</strong>
+            <small>Full-Stack · Flutter</small>
+          </span>
+        </a>
+
+        <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+          <span
+            class="nav-indicator"
+            id="navIndicator"
+            aria-hidden="true"
+          ></span>
+          <a href="#hero" data-section="hero">Home</a>
+          <a href="#about" data-section="about">About</a>
+          <a href="#skills" data-section="skills">Skills</a>
+          <a href="#projects" data-section="projects">Projects</a>
+          <a href="#process" data-section="process">Process</a>
+          <a href="#contact" data-section="contact">Contact</a>
+        </nav>
+
+        <a href="#contact" class="header-cta">
+          <span>Start your project</span>
+          <svg class="i" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M5 12h14M13 5l7 7-7 7" />
+          </svg>
+        </a>
+      </div>
+    </header>
+
+    <!-- SIDE RAIL (desktop) -->
+    <nav class="side-rail" aria-label="Page sections">
+      <a href="#hero" data-section="hero"
+        ><span class="rail-dot"></span
+        ><span class="rail-label">00 · Home</span></a
+      >
+      <a href="#about" data-section="about"
+        ><span class="rail-dot"></span
+        ><span class="rail-label">01 · About</span></a
+      >
+      <a href="#skills" data-section="skills"
+        ><span class="rail-dot"></span
+        ><span class="rail-label">02 · Skills</span></a
+      >
+      <a href="#projects" data-section="projects"
+        ><span class="rail-dot"></span
+        ><span class="rail-label">03 · Projects</span></a
+      >
+      <a href="#process" data-section="process"
+        ><span class="rail-dot"></span
+        ><span class="rail-label">04 · Process</span></a
+      >
+      <a href="#contact" data-section="contact"
+        ><span class="rail-dot"></span
+        ><span class="rail-label">05 · Contact</span></a
+      >
+    </nav>
+
+    <!-- MOBILE DOCK -->
+    <nav class="mobile-dock" aria-label="Quick navigation">
+      <a href="#hero" data-section="hero">
+        <svg class="i" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M3 11l9-8 9 8M5 10v10h14V10" />
+        </svg>
+        <span>Home</span>
+      </a>
+      <a href="#about" data-section="about">
+        <svg class="i" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="8" r="4" />
+          <path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6" />
+        </svg>
+        <span>About</span>
+      </a>
+      <a href="#skills" data-section="skills">
+        <svg class="i" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 3l9 5-9 5-9-5 9-5zM3 13l9 5 9-5" />
+        </svg>
+        <span>Skills</span>
+      </a>
+      <a href="#projects" data-section="projects">
+        <svg class="i" viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="3" y="3" width="7" height="7" rx="1.5" />
+          <rect x="14" y="3" width="7" height="7" rx="1.5" />
+          <rect x="3" y="14" width="7" height="7" rx="1.5" />
+          <rect x="14" y="14" width="7" height="7" rx="1.5" />
+        </svg>
+        <span>Projects</span>
+      </a>
+      <a href="#contact" data-section="contact">
+        <svg class="i" viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="3" y="5" width="18" height="14" rx="2" />
+          <path d="M3 7l9 6 9-6" />
+        </svg>
+        <span>Contact</span>
+      </a>
+    </nav>
+
+    <main id="main">
+      <!-- ====== HERO ====== -->
+      <section class="hero" id="hero">
+        <div class="container hero-grid">
+          <div class="hero-text">
+            <div class="status-pill">
+              <span class="pulse"></span>Available for new projects and job
+              opportunities
+            </div>
+
+            <p class="hero-kicker">Hi, I'm</p>
+            <h1 class="hero-name">
+              Abdulaziz <span class="accent-text">Mohammed</span>
+            </h1>
+
+            <p class="hero-role">
+              <span></span>
+              <span
+                class="typed"
+                id="typedText"
+                data-words='["Full-Stack Developer (Laravel)","Admin Dashboard Developer","Flutter App Developer","API Integration Developer"]'
+                >Full-Stack Developer (Laravel)</span
+              ><span class="caret" aria-hidden="true"></span>
+            </p>
+
+            <p class="hero-lead">
+              I build <strong>dashboards and platforms with Laravel</strong>,
+              connect them to <strong>Flutter</strong> apps, then deploy them on
+              <strong>Linux VPS</strong> servers — fast, responsive, and
+              reliable solutions.
+            </p>
+
+            <div class="hero-actions">
+              <a href="#projects" class="btn btn-primary magnetic">
+                <span>View my work</span>
+                <svg class="i" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M5 12h14M13 5l7 7-7 7" />
+                </svg>
+              </a>
+              <a href="#contact" class="btn btn-outline"
+                >Let's talk about your project</a
+              >
+              <a
+                href="CV_ABDULAZIZ_MOHAMMED.pdf"
+                download="CV_ABDULAZIZ_MOHAMMED.pdf"
+                class="btn btn-ghost"
+              >
+                <svg class="i" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 3v12M7 10l5 5 5-5M5 21h14" />
+                </svg>
+                <span>Download CV</span>
+              </a>
+            </div>
+
+            <div class="hero-stats">
+              <div class="stat">
+                <span class="stat-num"
+                  ><span data-count="8">8</span
+                  ><span class="accent-text">+</span></span
+                >
+                <span class="stat-label">Projects delivered</span>
+              </div>
+              <div class="stat">
+                <span class="stat-num"
+                  ><span data-count="1">1</span
+                  ><span class="accent-text">+</span></span
+                >
+                <span class="stat-label">Year of hands-on experience</span>
+              </div>
+              <div class="stat">
+                <span class="stat-num"><span data-count="3">3</span></span>
+                <span class="stat-label">Platforms deployed on VPS</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="portrait">
+              <div class="portrait-ring" aria-hidden="true"></div>
+              <div class="portrait-ring dashed" aria-hidden="true"></div>
+              <div class="portrait-inner">
+                <span class="portrait-fallback" aria-hidden="true">AM</span>
+                <img
+                  src="profile.jpg"
+                  alt="Abdulaziz Mohammed"
+                  onerror="this.remove()"
+                />
+              </div>
+              <span class="orbit-chip chip-a"
+                ><span class="dot"></span>Laravel</span
+              >
+              <span class="orbit-chip chip-b"
+                ><span class="dot"></span>Flutter</span
+              >
+              <span class="orbit-chip chip-c"
+                ><span class="dot"></span>MySQL</span
+              >
+              <span class="orbit-chip chip-d"
+                ><span class="dot"></span>Linux VPS</span
+              >
+            </div>
+
+            <div class="code-card" aria-hidden="true">
+              <div class="code-bar">
+                <i></i><i></i><i></i><span>Developer.php</span>
+              </div>
+              <pre><span class="tk-v">$abdulaziz</span> = <span class="tk-k">new</span> <span class="tk-f">Developer</span>();
+<span class="tk-v">$abdulaziz</span>-><span class="tk-f">build</span>(<span class="tk-s">'Laravel Dashboard'</span>)
+      -><span class="tk-f">connect</span>(<span class="tk-s">'Flutter App'</span>)
+      -><span class="tk-f">deploy</span>(<span class="tk-s">'Linux VPS'</span>);
+<span class="tk-c">// ✓ fast · responsive · reliable</span></pre>
+            </div>
+          </div>
+        </div>
+
+        <a href="#about" class="scroll-cue" aria-label="Go to the next section">
+          <span class="mouse"></span>
+          <span>Scroll down</span>
+        </a>
+      </section>
+
+      <!-- Tech marquee -->
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track">
+          <span>Laravel</span><span>PHP</span><span>MySQL</span
+          ><span>Flutter</span><span>Dart</span><span>Firebase</span
+          ><span>Bagisto</span><span>Linux VPS</span><span>JavaScript</span
+          ><span>SQLite</span><span>Git</span><span>Postman</span>
+          <span>Next.js</span><span>TypeScript</span><span>PostgreSQL</span
+          ><span>Tailwind CSS</span><span>Pusher</span
+          ><span>SaaS Architecture</span><span>NextAuth</span
+          ><span>Prisma</span>
+        </div>
+      </div>
+
+      <!-- ====== ABOUT ====== -->
+      <section class="section" id="about">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <span class="eyebrow"
+              ><span class="eyebrow-num">01</span>About me</span
+            >
+            <h2 class="section-title">
+              I build <span class="accent-text">a solid foundation</span> behind
+              every app
+            </h2>
+            <p class="section-lead">
+              From the database and dashboard to app integration and server
+              deployment — I handle the part users never see but feel with every
+              tap.
+            </p>
+          </div>
+
+          <div class="bento">
+            <article class="card span-2" data-reveal>
+              <div class="card-label">
+                <span class="card-icon"
+                  ><svg class="i" viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="8" r="4" />
+                    <path d="M4 21c1.5-4 4.5-6 8-6s6.5 2 8 6" /></svg
+                ></span>
+                Professional summary
+              </div>
+              <p class="bio-text">
+                Full-Stack web developer with over a year of experience building
+                websites, platforms, and <mark>admin dashboards</mark> using
+                Laravel, PHP, MySQL, HTML, CSS and JavaScript, and deploying
+                them on Linux VPS servers. I also have experience developing
+                <mark>Flutter</mark> apps and connecting them to a Laravel
+                backend, with a constant focus on fast, responsive, and reliable
+                solutions.
+              </p>
+              <div class="bio-meta">
+                <span class="meta-chip">
+                  <svg class="i" viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"
+                    />
+                    <circle cx="12" cy="10" r="2.5" />
+                  </svg>
+                  Hinte26759 , Niedersachsen
+                </span>
+                <span class="meta-chip">🌐 Remote work</span>
+                <span class="meta-chip">🗣️ Arabic · English</span>
+              </div>
+            </article>
+
+            <article class="card row-2" data-reveal>
+              <div class="card-label">
+                <span class="card-icon"
+                  ><svg class="i" viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="3" y="7" width="18" height="13" rx="2" />
+                    <path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" /></svg
+                ></span>
+                Work experience
+              </div>
+              <div class="timeline">
+                <div class="tl-item">
+                  <span class="tl-date">2025 — Present</span>
+                  <h3>Freelance Full-Stack Web Developer</h3>
+                  <ul class="tl-points">
+                    <li>
+                      Building Laravel dashboards, backends, and databases for
+                      web platforms and mobile apps.
+                    </li>
+                    <li>
+                      Setting up, deploying, and managing applications on Linux
+                      VPS servers.
+                    </li>
+                    <li>Delivered 8+ projects across web and mobile.</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+
+            <article class="card span-2" data-reveal>
+              <div class="card-label">
+                <span class="card-icon"
+                  ><svg class="i" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 3l9 5-9 5-9-5 9-5zM3 13l9 5 9-5" /></svg
+                ></span>
+                What I offer
+              </div>
+              <div class="services">
+                <div class="service">
+                  <span class="card-icon"
+                    ><svg class="i" viewBox="0 0 24 24" aria-hidden="true">
+                      <rect x="3" y="3" width="18" height="18" rx="2" />
+                      <path d="M3 9h18M9 21V9" /></svg
+                  ></span>
+                  <h3>Laravel Dashboards</h3>
+                  <p>
+                    Backends and databases, roles and permissions, and full
+                    content management.
+                  </p>
+                </div>
+                <div class="service">
+                  <span class="card-icon"
+                    ><svg class="i" viewBox="0 0 24 24" aria-hidden="true">
+                      <rect x="7" y="2" width="10" height="20" rx="2.5" />
+                      <path d="M11 18h2" /></svg
+                  ></span>
+                  <h3>Flutter App Integration</h3>
+                  <p>
+                    APIs, real-time Firebase notifications, and offline local
+                    storage.
+                  </p>
+                </div>
+                <div class="service">
+                  <span class="card-icon"
+                    ><svg class="i" viewBox="0 0 24 24" aria-hidden="true">
+                      <rect x="3" y="4" width="18" height="7" rx="2" />
+                      <rect x="3" y="13" width="18" height="7" rx="2" />
+                      <path d="M7 7.5h.01M7 16.5h.01" /></svg
+                  ></span>
+                  <h3>Linux VPS Deployment</h3>
+                  <p>
+                    Server setup, project deployment, and post-launch
+                    management.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="card span-3 strip" data-reveal>
+              <div class="strip-group">
+                <span class="strip-title">Languages</span>
+                <span class="meta-chip">Arabic — Native</span>
+                <span class="meta-chip">English — Fluent</span>
+                <span class="meta-chip">German - Fluent</span>
+              </div>
+              <div class="strip-group">
+                <span class="strip-title">Off Screen</span>
+                <span class="meta-chip">🏋️ Bodybuilding</span>
+                <span class="meta-chip">⚽ Football</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====== SKILLS ====== -->
+      <section class="section" id="skills">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <span class="eyebrow"
+              ><span class="eyebrow-num">02</span>Technical skills</span
+            >
+            <h2 class="section-title">
+              Tools I use <span class="accent-text">daily</span>
+            </h2>
+            <p class="section-lead">
+              Technologies highlighted in green are the core of my work.
+            </p>
+          </div>
+
+          <div class="skills-grid">
+            <article class="card" data-reveal>
+              <div class="skill-head">
+                <div class="skill-head-main">
+                  <span class="card-icon"
+                    ><svg class="i" viewBox="0 0 24 24" aria-hidden="true">
+                      <path d="M8 7l-5 5 5 5M16 7l5 5-5 5" /></svg
+                  ></span>
+                  <h3>Web &amp; Backend Development</h3>
+                </div>
+                <span class="skill-count">06</span>
+              </div>
+              <ul class="chips">
+                <li class="chip core">PHP</li>
+                <li class="chip core">Laravel</li>
+                <li class="chip">Bagisto</li>
+                <li class="chip">REST API</li>
+                <li class="chip">JavaScript</li>
+                <li class="chip">HTML5 / CSS3</li>
+              </ul>
+            </article>
+
+            <article class="card" data-reveal>
+              <div class="skill-head">
+                <div class="skill-head-main">
+                  <span class="card-icon"
+                    ><svg class="i" viewBox="0 0 24 24" aria-hidden="true">
+                      <rect x="7" y="2" width="10" height="20" rx="2.5" />
+                      <path d="M11 18h2" /></svg
+                  ></span>
+                  <h3>Mobile Development</h3>
+                </div>
+                <span class="skill-count">06</span>
+              </div>
+              <ul class="chips">
+                <li class="chip core">Flutter</li>
+                <li class="chip core">Dart</li>
+                <li class="chip">Firebase Push Notifications</li>
+                <li class="chip">SharedPreferences</li>
+                <li class="chip">Local Data Storage</li>
+                <li class="chip">PDF Export</li>
+              </ul>
+            </article>
+
+            <article class="card" data-reveal>
+              <div class="skill-head">
+                <div class="skill-head-main">
+                  <span class="card-icon"
+                    ><svg class="i" viewBox="0 0 24 24" aria-hidden="true">
+                      <ellipse cx="12" cy="5" rx="8" ry="3" />
+                      <path
+                        d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"
+                      /></svg
+                  ></span>
+                  <h3>Databases</h3>
+                </div>
+                <span class="skill-count">03</span>
+              </div>
+              <ul class="chips">
+                <li class="chip core">MySQL</li>
+                <li class="chip">SQLite</li>
+                <li class="chip">JSON File Management</li>
+                <li class="chip">PostgreSQL</li>
+              </ul>
+            </article>
+
+            <article class="card" data-reveal>
+              <div class="skill-head">
+                <div class="skill-head-main">
+                  <span class="card-icon"
+                    ><svg class="i" viewBox="0 0 24 24" aria-hidden="true">
+                      <rect x="3" y="4" width="18" height="7" rx="2" />
+                      <rect x="3" y="13" width="18" height="7" rx="2" />
+                      <path d="M7 7.5h.01M7 16.5h.01" /></svg
+                  ></span>
+                  <h3>Tools &amp; Deployment</h3>
+                </div>
+                <span class="skill-count">05</span>
+              </div>
+              <ul class="chips">
+                <li class="chip core">Linux VPS</li>
+                <li class="chip">Git / GitHub</li>
+                <li class="chip">Postman</li>
+                <li class="chip">Ngrok</li>
+                <li class="chip">XAMPP & Laragon</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====== PROJECTS ====== -->
+      <section class="section" id="projects">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <span class="eyebrow"
+              ><span class="eyebrow-num">03</span>Technical projects</span
+            >
+            <h2 class="section-title">
+              Completed and <span class="accent-text">delivered projects</span>
+            </h2>
+            <p class="section-lead">
+              Choose a category, then click any project to see my role and its
+              features in detail.
+            </p>
+          </div>
+
+          <div class="filter-bar" data-reveal>
+            <div
+              class="filters"
+              id="projectFilters"
+              role="group"
+              aria-label="Filter projects"
+            >
+              <span class="filter-indicator" aria-hidden="true"></span>
+              <button
+                class="filter-btn is-active"
+                data-filter="all"
+                aria-pressed="true"
+              >
+                All <span class="count">10</span>
+              </button>
+              <button class="filter-btn" data-filter="web" aria-pressed="false">
+                Web &amp; Laravel <span class="count">4</span>
+              </button>
+              <button
+                class="filter-btn"
+                data-filter="mobile"
+                aria-pressed="false"
+              >
+                Flutter Apps <span class="count">3</span>
+              </button>
+              <button
+                class="filter-btn"
+                data-filter="desktop"
+                aria-pressed="false"
+              >
+                Desktop <span class="count">1</span>
+              </button>
+              <button
+                class="filter-btn"
+                data-filter="saas"
+                aria-pressed="false"
+              >
+                Saas <span class="count">2</span>
+              </button>
+            </div>
+            <p class="filter-result" id="filterResult" aria-live="polite"></p>
+          </div>
+
+          <div class="projects-grid">
+            <!-- 01 -->
+            <article class="card project-card" data-category="web" data-reveal>
+              <header class="pc-head">
+                <span class="pc-index">01</span>
+                <span class="pc-type t-web">Web Platform + API</span>
+              </header>
+              <h3 class="pc-title">Car Parts Tenders Platform</h3>
+              <p class="pc-sub">Car Parts Tenders — Neutral Marketplace</p>
+              <p class="pc-desc">
+                A neutral platform connecting customers with car parts dealers
+                through a tender system, with no financial liability on the
+                platform.
+              </p>
+              <ul class="pc-tech">
+                <li>Laravel</li>
+                <li>PHP</li>
+                <li>Firebase</li>
+                <li>Flutter API</li>
+                <li>Linux VPS</li>
+              </ul>
+              <footer class="pc-foot">
+                <span class="pc-role">My role: Backend &amp; dashboard</span>
+                <button class="pc-btn" data-open-project>
+                  Details
+                  <svg class="i" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M7 17L17 7M9 7h8v8" />
+                  </svg>
+                </button>
+              </footer>
+              <div class="pc-more" hidden>
+                <h4>My role in the project</h4>
+                <p>
+                  Built the entire admin dashboard from scratch: the backend,
+                  database, and web panel, with a custom navy-and-green
+                  interface.
+                </p>
+                <h4>Key features</h4>
+                <ul>
+                  <li>Advanced dashboard with full platform control</li>
+                  <li>Role-based banners and permissions system</li>
+                  <li>Smart search engine and fast performance</li>
+                  <li>Real-time notifications via Firebase</li>
+                  <li>Professional UI with color gradients</li>
+                  <li>
+                    GDPR-compliant, with a privacy policy for store publishing
+                  </li>
+                </ul>
+                <p class="modal-note">
+                  The mobile app UI was developed separately; my role was
+                  connecting it to the backend.
+                </p>
+              </div>
+            </article>
+
+            <!-- 02 -->
+            <article class="card project-card" data-category="web" data-reveal>
+              <header class="pc-head">
+                <span class="pc-index">02</span>
+                <span class="pc-type t-web">E-Commerce Store</span>
+              </header>
+              <h3 class="pc-title">Our Family Grocery Store</h3>
+              <p class="pc-sub">Our Family — Grocery E-Commerce</p>
+              <p class="pc-desc">
+                A mobile grocery e-commerce app for selling food products, with
+                a full admin dashboard built on Bagisto.
+              </p>
+              <ul class="pc-tech">
+                <li>Laravel</li>
+                <li>Bagisto</li>
+                <li>PHP</li>
+                <li>Firebase</li>
+                <li>PayPal / IBAN</li>
+                <li>Linux VPS</li>
+              </ul>
+              <footer class="pc-foot">
+                <span class="pc-role">My role: Backend &amp; dashboard</span>
+                <button class="pc-btn" data-open-project>
+                  Details
+                  <svg class="i" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M7 17L17 7M9 7h8v8" />
+                  </svg>
+                </button>
+              </footer>
+              <div class="pc-more" hidden>
+                <h4>My role in the project</h4>
+                <p>
+                  Built the entire admin dashboard (backend, database, and web
+                  panel) on Bagisto, the Laravel-based e-commerce framework.
+                </p>
+                <h4>Key features</h4>
+                <ul>
+                  <li>Advanced dashboard with full control (Bagisto)</li>
+                  <li>Loyalty points, banners, and order tracking</li>
+                  <li>Multi-purpose search engine</li>
+                  <li>Payments via IBAN and PayPal</li>
+                  <li>Real-time notifications via Firebase</li>
+                  <li>
+                    GDPR-compliant, with a privacy policy for store publishing
+                  </li>
+                </ul>
+                <p class="modal-note">
+                  The mobile app UI was developed separately; my role was
+                  connecting it to the backend.
+                </p>
+              </div>
+            </article>
+
+            <!-- 03 -->
+            <article class="card project-card" data-category="web" data-reveal>
+              <header class="pc-head">
+                <span class="pc-index">03</span>
+                <span class="pc-type t-web">Educational Platform</span>
+              </header>
+              <h3 class="pc-title">Bayah School Educational Platform</h3>
+              <p class="pc-sub">Bayah School — Educational Platform</p>
+              <p class="pc-desc">
+                An educational website for a school in the UAE with a quiz
+                system and precise tracking of student points and activity.
+              </p>
+              <ul class="pc-tech">
+                <li>Laravel</li>
+                <li>PHP</li>
+                <li>JavaScript</li>
+                <li>HTML / CSS</li>
+                <li>VPS Hosting</li>
+              </ul>
+              <footer class="pc-foot">
+                <span class="pc-role">Development &amp; VPS deployment</span>
+                <button class="pc-btn" data-open-project>
+                  Details
+                  <svg class="i" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M7 17L17 7M9 7h8v8" />
+                  </svg>
+                </button>
+              </footer>
+              <div class="pc-more" hidden>
+                <h4>About the project</h4>
+                <p>
+                  An educational platform that motivates students to engage
+                  through quizzes, points, and a leaderboard.
+                </p>
+                <h4>Key features</h4>
+                <ul>
+                  <li>Short quiz system with points tracking</li>
+                  <li>Accurate points calculation system</li>
+                  <li>Leaderboard based on student activity</li>
+                  <li>Upload videos, podcasts, and PDF files</li>
+                  <li>Likes and comments</li>
+                  <li>Confidential file uploads</li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- 04 -->
+            <article class="card project-card" data-category="web" data-reveal>
+              <header class="pc-head">
+                <span class="pc-index">04</span>
+                <span class="pc-type t-web">Web Tool</span>
+              </header>
+              <h3 class="pc-title">Turkish Box Calculator</h3>
+              <p class="pc-sub">Turkish Box — Box Cost Calculator</p>
+              <p class="pc-desc">
+                A website that calculates box costs from their dimensions, with
+                instant and accurate results.
+              </p>
+              <ul class="pc-tech">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>GitHub</li>
+              </ul>
+              <footer class="pc-foot">
+                <span class="pc-role">Full design &amp; development</span>
+                <button class="pc-btn" data-open-project>
+                  Details
+                  <svg class="i" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M7 17L17 7M9 7h8v8" />
+                  </svg>
+                </button>
+              </footer>
+              <div class="pc-more" hidden>
+                <h4>About the project</h4>
+                <p>
+                  A practical tool that reduces manual box cost calculation to
+                  simply entering the dimensions.
+                </p>
+                <h4>Key features</h4>
+                <ul>
+                  <li>Responsive design for all devices</li>
+                  <li>Instant, accurate calculations</li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- 05 -->
+            <article
+              class="card project-card"
+              data-category="mobile"
+              data-reveal
+            >
+              <header class="pc-head">
+                <span class="pc-index">05</span>
+                <span class="pc-type t-mobile">Flutter App</span>
+              </header>
+              <h3 class="pc-title">Workers Wages App</h3>
+              <p class="pc-sub">Workers Wages App</p>
+              <p class="pc-desc">
+                A lightweight app for managing workers' wages in multiple
+                currencies, with attendance and absence tracking.
+              </p>
+              <ul class="pc-tech">
+                <li>Flutter</li>
+                <li>Dart</li>
+                <li>SharedPreferences</li>
+                <li>Offline</li>
+              </ul>
+              <footer class="pc-foot">
+                <span class="pc-role">Full development</span>
+                <button class="pc-btn" data-open-project>
+                  Details
+                  <svg class="i" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M7 17L17 7M9 7h8v8" />
+                  </svg>
+                </button>
+              </footer>
+              <div class="pc-more" hidden>
+                <h4>About the project</h4>
+                <p>
+                  A fully offline app for quickly managing workers' wages and
+                  attendance.
+                </p>
+                <h4>Key features</h4>
+                <ul>
+                  <li>Multi-currency wage calculation</li>
+                  <li>One-tap attendance logging</li>
+                  <li>Index for fast search</li>
+                  <li>Persistent offline storage</li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- 06 -->
+            <article
+              class="card project-card"
+              data-category="mobile"
+              data-reveal
+            >
+              <header class="pc-head">
+                <span class="pc-index">06</span>
+                <span class="pc-type t-mobile">Flutter App</span>
+              </header>
+              <h3 class="pc-title">Wholesale Market Accountant</h3>
+              <p class="pc-sub">Al-Hal Market Accountant</p>
+              <p class="pc-desc">
+                A complete accounting app for wholesale markets, with a compact
+                interface that shows everything on a single screen.
+              </p>
+              <ul class="pc-tech">
+                <li>Flutter</li>
+                <li>Dart</li>
+                <li>SharedPreferences</li>
+                <li>JSON</li>
+                <li>PDF</li>
+              </ul>
+              <footer class="pc-foot">
+                <span class="pc-role">Full development</span>
+                <button class="pc-btn" data-open-project>
+                  Details
+                  <svg class="i" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M7 17L17 7M9 7h8v8" />
+                  </svg>
+                </button>
+              </footer>
+              <div class="pc-more" hidden>
+                <h4>About the project</h4>
+                <p>
+                  Built for fast data entry in the busy wholesale market
+                  environment.
+                </p>
+                <h4>Key features</h4>
+                <ul>
+                  <li>Compact design showing all items on a single screen</li>
+                  <li>Persistent offline storage</li>
+                  <li>Index for fast search</li>
+                  <li>Export reports to PDF</li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- 07 -->
+            <article
+              class="card project-card"
+              data-category="mobile"
+              data-reveal
+            >
+              <header class="pc-head">
+                <span class="pc-index">07</span>
+                <span class="pc-type t-mobile">Flutter App</span>
+              </header>
+              <h3 class="pc-title">Shop Debts Manager</h3>
+              <p class="pc-sub">Shop Debts Manager</p>
+              <p class="pc-desc">
+                An app for tracking supermarket and shop debts, replacing
+                traditional debt notebooks.
+              </p>
+              <ul class="pc-tech">
+                <li>Flutter</li>
+                <li>Dart</li>
+                <li>SharedPreferences</li>
+                <li>JSON</li>
+                <li>PDF</li>
+              </ul>
+              <footer class="pc-foot">
+                <span class="pc-role">Full development</span>
+                <button class="pc-btn" data-open-project>
+                  Details
+                  <svg class="i" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M7 17L17 7M9 7h8v8" />
+                  </svg>
+                </button>
+              </footer>
+              <div class="pc-more" hidden>
+                <h4>About the project</h4>
+                <p>
+                  Turns the paper debt ledger into an organized system with
+                  invoices and backups.
+                </p>
+                <h4>Key features</h4>
+                <ul>
+                  <li>Shop budget calculation and analysis</li>
+                  <li>Generate a PDF invoice in two seconds</li>
+                  <li>Backup and data transfer</li>
+                  <li>Index for fast search</li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- 08 -->
+            <article
+              class="card project-card"
+              data-category="desktop"
+              data-reveal
+            >
+              <header class="pc-head">
+                <span class="pc-index">08</span>
+                <span class="pc-type t-desktop">Desktop</span>
+              </header>
+              <h3 class="pc-title">The Original Accounting App</h3>
+              <p class="pc-sub">Original Accounting App</p>
+              <p class="pc-desc">
+                A desktop accounting app for goods trading, operated entirely
+                from the keyboard.
+              </p>
+              <ul class="pc-tech">
+                <li>Flutter Desktop</li>
+                <li>Dart</li>
+                <li>SharedPreferences</li>
+                <li>JSON</li>
+                <li>PDF</li>
+              </ul>
+              <footer class="pc-foot">
+                <span class="pc-role">Full development</span>
+                <button class="pc-btn" data-open-project>
+                  Details
+                  <svg class="i" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M7 17L17 7M9 7h8v8" />
+                  </svg>
+                </button>
+              </footer>
+              <div class="pc-more" hidden>
+                <h4>About the project</h4>
+                <p>
+                  Designed for very fast data entry without needing a mouse.
+                </p>
+                <h4>Key features</h4>
+                <ul>
+                  <li>Fully keyboard-operated, no mouse needed</li>
+                  <li>Persistent storage supporting multiple devices</li>
+                  <li>Export invoices and details to PDF</li>
+                  <li>Backup system</li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- 09 -->
+            <article class="card project-card" data-category="saas" data-reveal>
+              <header class="pc-head">
+                <span class="pc-index">09</span>
+                <span class="pc-type t-saas">Saas</span>
+              </header>
+              <h3 class="pc-title">Barbrs Shop</h3>
+              <p class="pc-sub">Booking platform · SaaS concept</p>
+              <p class="pc-desc">
+                A booking platform concept for a barber or hair salon, with
+                appointment scheduling and a foundation for customer and shop
+                management.
+              </p>
+              <ul class="pc-tech">
+                <li>Next.js</li>
+                <li>TypeScript</li>
+                <li>Supabase</li>
+                <li>Prisma</li>
+                <li>Auth</li>
+              </ul>
+              <footer class="pc-foot">
+                <span class="pc-role">Full development</span>
+                <button class="pc-btn" data-open-project>
+                  Details
+                  <svg class="i" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M7 17L17 7M9 7h8v8" />
+                  </svg>
+                </button>
+              </footer>
+              <div class="pc-more" hidden>
+                <h4>About the project</h4>
+                <p>
+                  Designed around services, appointments, customers and business
+                  management.
+                </p>
+                <h4>Key features</h4>
+                <ul>
+                  <li>A public-facing landing page dedicated to each shop</li>
+                  <li>​Database-Level Isolation</li>
+                  <li>Service & Staff Management</li>
+                  <li>Shared Architecture</li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- 10 -->
+            <article class="card project-card" data-category="saas" data-reveal>
+              <header class="pc-head">
+                <span class="pc-index">10</span>
+                <span class="pc-type t-saas">Saas</span>
+              </header>
+              <h3 class="pc-title">Saas-clinck / DentaCare</h3>
+              <p class="pc-sub">Multi-Tenant SaaS</p>
+              <p class="pc-desc">
+                A full-stack SaaS concept for managing multiple dental clinics
+                with tenant isolation, role-based access, appointments,
+                subscriptions and dashboards.
+              </p>
+              <ul class="pc-tech">
+                <li>Next.js</li>
+                <li>TypeScript</li>
+                <li>PostgreSQL</li>
+                <li>Prisma</li>
+                <li>NextAuth</li>
+                <li>Stripe</li>
+              </ul>
+              <footer class="pc-foot">
+                <span class="pc-role">Full development</span>
+                <button class="pc-btn" data-open-project>
+                  Details
+                  <svg class="i" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M7 17L17 7M9 7h8v8" />
+                  </svg>
+                </button>
+              </footer>
+              <div class="pc-more" hidden>
+                <h4>About the project</h4>
+                <p>
+                  It is designed to serve multiple dental clinics using a single
+                  codebase
+                </p>
+                <h4>Key features</h4>
+                <ul>
+                  <li>Strict Server-Side Isolation</li>
+                  <li>Smart Appointment Engine</li>
+                  <li>Clinic Management & Billing Dashboard</li>
+                  <li>Comprehensive Patient Experience</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====== PROCESS ====== -->
+      <section class="section" id="process">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <span class="eyebrow"
+              ><span class="eyebrow-num">04</span>Process</span
+            >
+            <h2 class="section-title">
+              From idea to <span class="accent-text">server</span>
+            </h2>
+            <p class="section-lead">
+              Four clear stages, so you always know where your project stands.
+            </p>
+          </div>
+
+          <ol class="process">
+            <li class="card step" data-reveal>
+              <span class="step-num">01</span>
+              <h3>Understanding requirements</h3>
+              <p>
+                Defining project goals, users, roles, and permissions before
+                anything else.
+              </p>
+            </li>
+            <li class="card step" data-reveal>
+              <span class="step-num">02</span>
+              <h3>Designing the architecture</h3>
+              <p>
+                Structuring the database, relationships, and APIs in a scalable
+                way.
+              </p>
+            </li>
+            <li class="card step" data-reveal>
+              <span class="step-num">03</span>
+              <h3>Development &amp; integration</h3>
+              <p>
+                Building the backend and dashboard with Laravel and connecting
+                them to the Flutter app and notifications.
+              </p>
+            </li>
+            <li class="card step" data-reveal>
+              <span class="step-num">04</span>
+              <h3>Deployment &amp; follow-up</h3>
+              <p>
+                Setting up the Linux VPS server, deploying the project, and
+                following up after delivery.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- ====== CONTACT ====== -->
+      <section class="section" id="contact">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <span class="eyebrow"
+              ><span class="eyebrow-num">05</span>Get in touch</span
+            >
+            <h2 class="section-title">
+              Have a project or
+              <span class="accent-text">a job opportunity?</span>
+            </h2>
+            <p class="section-lead">
+              Available to build platforms, Laravel dashboards, and Flutter
+              apps, and to integrate and deploy them on Linux VPS.
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <div class="contact-side" data-reveal>
+              <div class="channels">
+                <div class="channel">
+                  <span class="card-icon"
+                    ><svg class="i" viewBox="0 0 24 24" aria-hidden="true">
+                      <rect x="3" y="5" width="18" height="14" rx="2" />
+                      <path d="M3 7l9 6 9-6" /></svg
+                  ></span>
+                  <div class="channel-body">
+                    <span class="channel-label">Email</span>
+                    <a
+                      class="channel-value"
+                      href="mailto:abdalaziz.mh.fr@gmail.com"
+                      >abdalaziz.mh.fr@gmail.com</a
+                    >
+                  </div>
+                  <button
+                    class="icon-btn"
+                    data-copy="abdalaziz.mh.fr@gmail.com"
+                    data-copy-label="Email address"
+                    aria-label="Copy email address"
+                  >
+                    <svg class="i" viewBox="0 0 24 24" aria-hidden="true">
+                      <rect x="9" y="9" width="12" height="12" rx="2" />
+                      <path d="M5 15V5a2 2 0 0 1 2-2h10" />
+                    </svg>
+                  </button>
+                </div>
+
+                <div class="channel">
+                  <span class="card-icon"
+                    ><svg class="i" viewBox="0 0 24 24" aria-hidden="true">
+                      <path
+                        d="M21 12a8.5 8.5 0 0 1-12.6 7.4L3 21l1.6-5.2A8.5 8.5 0 1 1 21 12z"
+                      /></svg
+                  ></span>
+                  <div class="channel-body">
+                    <span class="channel-label">Phone / WhatsApp</span>
+                    <a
+                      class="channel-value"
+                      href="https://wa.me/4917645177244"
+                      target="_blank"
+                      rel="noopener"
+                      >+49 176 4517 7244</a
+                    >
+                  </div>
+                  <button
+                    class="icon-btn"
+                    data-copy="+4917645177244"
+                    data-copy-label="Phone number"
+                    aria-label="Copy phone number"
+                  >
+                    <svg class="i" viewBox="0 0 24 24" aria-hidden="true">
+                      <rect x="9" y="9" width="12" height="12" rx="2" />
+                      <path d="M5 15V5a2 2 0 0 1 2-2h10" />
+                    </svg>
+                  </button>
+                </div>
+
+                <div class="channel">
+                  <span class="card-icon"
+                    ><svg class="i" viewBox="0 0 24 24" aria-hidden="true">
+                      <path
+                        d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"
+                      />
+                      <circle cx="12" cy="10" r="2.5" /></svg
+                  ></span>
+                  <div class="channel-body">
+                    <span class="channel-label">Location</span>
+                    <span class="channel-value plain"
+                      >Hinte26759 , Niedersachsen · Available remotely</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <a
+                href="CV_ABDULAZIZ_MOHAMMED.pdf"
+                download="CV_ABDULAZIZ_MOHAMMED.pdf"
+                class="cv-card"
+              >
+                <span class="card-icon"
+                  ><svg class="i" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 3v12M7 10l5 5 5-5M5 21h14" /></svg
+                ></span>
+                <span
+                  ><strong>Curriculum Vitae</strong
+                  ><small>CV_ABDULAZIZ_MOHAMMED.pdf</small></span
+                >
+              </a>
+            </div>
+
+            <form
+              class="card form-card"
+              id="contactForm"
+              novalidate
+              data-reveal
+            >
+              <div class="form-row">
+                <div class="field">
+                  <label for="name">Full name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    placeholder="Your name"
+                    autocomplete="name"
+                  />
+                </div>
+                <div class="field">
+                  <label for="email">Email address</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    placeholder="name@example.com"
+                    autocomplete="email"
+                    dir="ltr"
+                  />
+                </div>
+              </div>
+              <div class="field">
+                <label for="type">Project type</label>
+                <select id="type" name="type">
+                  <option>Laravel dashboard / backend</option>
+                  <option>Web platform or website</option>
+                  <option>Connecting a Flutter app to the backend</option>
+                  <option>Linux VPS deployment</option>
+                  <option>Job opportunity / position</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                  placeholder="Write your project details or message..."
+                ></textarea>
+              </div>
+              <div class="form-actions">
+                <button
+                  type="submit"
+                  class="btn btn-primary"
+                  data-channel="email"
+                >
+                  <svg class="i" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z" />
+                  </svg>
+                  <span>Send via Email</span>
+                </button>
+                <button
+                  type="submit"
+                  class="btn btn-outline"
+                  data-channel="whatsapp"
+                >
+                  <svg class="i" viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M21 12a8.5 8.5 0 0 1-12.6 7.4L3 21l1.6-5.2A8.5 8.5 0 1 1 21 12z"
+                    />
+                  </svg>
+                  <span>Send via WhatsApp</span>
+                </button>
+              </div>
+              <p class="form-hint">
+                Your message will open ready to send in your email app or
+                WhatsApp — nothing gets lost.
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ====== FOOTER ====== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <a href="#hero" class="brand">
+            <span class="brand-mark">AM</span>
+            <span class="brand-text"
+              ><strong>Abdulaziz Mohammed</strong
+              ><small>Full-Stack · Flutter</small></span
+            >
+          </a>
+          <nav class="footer-links" aria-label="Footer links">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#process">Process</a>
+            <a href="#contact">Contact</a>
+          </nav>
+        </div>
+        <div class="footer-bottom">
+          <span
+            >© <span id="year">2026</span> Abdulaziz Mohammed. All rights
+            reserved.</span
+          >
+          <span class="footer-made"
+            >Designed &amp; built with care
+            <span class="accent-text">✦</span></span
+          >
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back-to-top button with progress ring -->
+    <button class="to-top" id="toTop" aria-label="Back to top">
+      <svg class="ring" viewBox="0 0 52 52" aria-hidden="true">
+        <circle cx="26" cy="26" r="24" />
+      </svg>
+      <svg class="i" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M12 19V5M5 12l7-7 7 7" />
+      </svg>
+    </button>
+
+    <!-- Project details modal -->
+    <div class="modal" id="projectModal" aria-hidden="true">
+      <div class="modal-backdrop" data-close></div>
+      <div
+        class="modal-panel"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modalTitle"
+      >
+        <button class="modal-close" data-close aria-label="Close">
+          <svg class="i" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M6 6l12 12M18 6L6 18" />
+          </svg>
+        </button>
+        <div class="modal-meta">
+          <span class="pc-index" id="modalIndex"></span>
+          <span class="pc-type" id="modalType"></span>
+        </div>
+        <h3 class="modal-title" id="modalTitle"></h3>
+        <p class="pc-sub" id="modalSub"></p>
+        <p class="modal-desc" id="modalDesc"></p>
+        <ul class="pc-tech" id="modalTech"></ul>
+        <div class="modal-body" id="modalBody"></div>
+        <div class="modal-nav">
+          <button id="modalPrev" type="button">
+            <svg class="i" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M15 6l-6 6 6 6" /></svg
+            >Previous
+          </button>
+          <span class="modal-counter" id="modalCounter"></span>
+          <button id="modalNext" type="button">
+            Next<svg class="i" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M9 6l6 6-6 6" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="toast-wrap" id="toastWrap" aria-live="polite"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
